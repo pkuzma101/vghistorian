@@ -51,9 +51,9 @@
     <div id="featured_pic"></div>
     <table id="photo_table">
       <tr>
-        <td><img src="{{ $console->controller_pic }}" class="gallery_pic"></td>
-        <td><img src="{{ $console->jap_pic }}" class="gallery_pic"></td>
-        <td><img src="{{ $console->pal_pic }}" class="gallery_pic"></td>
+        <td><img src="{{ $console->controller_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="North American version"></td>
+        <td><img src="{{ $console->jap_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="Japanese version"></td>
+        <td><img src="{{ $console->pal_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="PAL version"></td>
       </tr>
     </table>
   </article>
@@ -64,6 +64,9 @@
   // set up tab functionality
   $(function() {
     $('#console_tabs').tabs();
+
+    // set up tooltip functionality
+    $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
 @endsection
