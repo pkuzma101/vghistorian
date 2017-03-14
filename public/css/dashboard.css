@@ -1,0 +1,88 @@
+section#dashboard_box div#title_box {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section#dashboard_box article#timeline_box {
+  background: white;
+  width: 100%;
+  padding: 30px;
+}
+
+article#timeline_box div#timeline {
+  width: 1175px;
+  /*height: 450px;*/
+  margin: 0 auto;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+article#timeline_box div#year_div {
+  width: 1175px;
+  margin: 0 auto;
+}
+
+article#timeline_box div#year_div span#current {
+  float: right;
+}
+
+article#timeline_box div#timeline div.vertical_line {
+  width: 30px;
+  border-left: 1px solid black;
+  height: 100%;
+  float: left;
+}
+
+article#timeline_box div#timeline div.system_block {
+  position: absolute;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2em;
+}
+
+article#timeline_box div#timeline div#atari_2600 {
+  width: 480px;
+  background: red;
+  left: 210px;
+}
+
+article#timeline_box div#timeline div#nes {
+  width: 300px;
+  background: gray;
+  top: 80px;
+  left: 450px;
+}
+
+article#timeline_box div#timeline div#genesis {
+  width: 270px;
+  background: black;
+  top: 160px;
+  left: 570px;
+  color: white;
+}
+
+article#timeline_box div#timeline div#snes {
+  width: 240px;
+  background-color: #d2d1d1;
+  top: 240px;
+  left: 630px;
+}
+
+article#timeline_box div#timeline div#ps1 {
+  width: 390px;
+  background-color: #a8a2a3;
+  top: 320px;
+  left: 750px;
+}
+
+article#timeline_box div#timeline div#n64 {
+  width: 210px;
+  background-color: #990000;
+  top: 400px;
+  left: 780px;
+}  

@@ -36,7 +36,7 @@
       </div>
     </div>
   </article>
-  <article id="summary_box">
+  <article id="summary_box" style="background: white;">
     <h2>In Summary...</h2>
     <table id="summary_table">
       <tr><td>Manufacturer</td><td>{{{ $console->company_name }}}</td></tr>

@@ -35,7 +35,7 @@ section#console_page article {
 }
 
 section#console_page article#tabs_box {
-  background: blue;
+  background: #194ec4;
 }
 
 section#console_page article#tabs_box div#console_tabs ul {
@@ -63,6 +63,12 @@ section#console_page article#tabs_box div#tab_text p {
   margin:0 auto;
 }
 
+section#console_page article#summary_box {
+  background: white;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
 section#console_page article#summary_box h2 {
   text-align: center;
 }
@@ -82,7 +88,7 @@ table#summary_table td {
 section#console_page article#gallery {
   width: 100%;
   margin-top: 55px;
-  background: blue;
+  background: #194ec4;
   padding-bottom: 75px;
 }
 
