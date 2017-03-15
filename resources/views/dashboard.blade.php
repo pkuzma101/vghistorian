@@ -2,15 +2,35 @@
 {{ Html::style( asset('css/dashboard.css')) }}
 @section('content')
 <section id="dashboard_box">
-  <div id="title_box">
-    <h1>Video Game Historian</h1>
-  </div>
+  <article id="site_sumup">
+    <div id="title_box">
+      <h1>Video Game Historian</h1>
+    </div>
+    <div id="exp_div">
+      <p>Where we tell the story of video games - one console at a time</p>
+    </div>
+  </article>
   <article id="timeline_box">
     <div id="year_div">
       <span>1970</span>
       <span id="current">2008</span>
     </div>
     <div id="timeline"></div>
+  </article>
+  <article id="journey_select_box">
+    <h2>Start your journey by system or company?</h2>
+    <div id="select_box">
+      <select id="console_select" name="console_select">
+        @foreach($consoles as $consoles)
+          <option value="{{{ $consoles->id }}}">{{{ $consoles->name }}}</option>
+        @endforeach
+      </select>
+      <select id="company_select" name="company_select">
+        @foreach($companies as $company)
+          <option value="{{{ $company->id }}}">{{{ $company->name }}}</option>
+        @endforeach
+      </select>
+    </div>
   </article>
 </section>
 <script>
@@ -20,6 +40,7 @@
       $('div#timeline').append('<div class="vertical_line" id="year' + i +'"></div>');
     }
 
+    // create system blocks on grid
     $('div#timeline').append('<div id="atari_2600" class="system_block">Atari 2600</div>');
     $('div#timeline').append('<div id="nes" class="system_block">NES</div>');
     $('div#timeline').append('<div id="genesis" class="system_block">Genesis</div>');

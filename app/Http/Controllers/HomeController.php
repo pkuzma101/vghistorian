@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use DB;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      // return view('dashboard');
+
+      $consoles = DB::table('consoles')->get();
+      $companies = DB::table('companies')->get();
+      return view('dashboard', ['consoles'=>$consoles], ['companies'=>$companies]);
     }
 }

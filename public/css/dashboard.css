@@ -1,7 +1,24 @@
+article#site_sumup {
+  height: 300px;
+  padding-top: 50px;
+  color: white;
+}
+
+article#site_sumup div#exp_div {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5em;
+}
+
 section#dashboard_box div#title_box {
   width: 70%;
   margin: 0 auto;
   text-align: center;
+}
+
+section#dashboard_box div#title_box h1 {
+  font-size: 5em;
 }
 
 section#dashboard_box article#timeline_box {
