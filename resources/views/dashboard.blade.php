@@ -18,18 +18,23 @@
     <div id="timeline"></div>
   </article>
   <article id="journey_select_box">
-    <h2>Start your journey by system or company?</h2>
     <div id="select_box">
-      <select id="console_select" name="console_select">
-        @foreach($consoles as $consoles)
-          <option value="{{{ $consoles->id }}}">{{{ $consoles->name }}}</option>
-        @endforeach
-      </select>
-      <select id="company_select" name="company_select">
-        @foreach($companies as $company)
-          <option value="{{{ $company->id }}}">{{{ $company->name }}}</option>
-        @endforeach
-      </select>
+      <h2>Start your journey by system or company?</h2>
+      <div id="select_div">
+ 
+          <select id="console_select" name="console_select" style="float: left;">
+            @foreach($consoles as $consoles)
+              <option value="{{{ $consoles->id }}}">{{{ $consoles->name }}}</option>
+            @endforeach
+          </select>
+        
+          <select id="company_select" name="company_select" style="float: right;">
+            @foreach($companies as $company)
+              <option value="{{{ $company->id }}}">{{{ $company->name }}}</option>
+            @endforeach
+          </select>
+        
+      </div>
     </div>
   </article>
 </section>

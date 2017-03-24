@@ -102,4 +102,25 @@ article#timeline_box div#timeline div#n64 {
   background-color: #990000;
   top: 400px;
   left: 780px;
-}  
+}
+
+article#journey_select_box div#select_box {
+  width: 75%; 
+  margin: 0 auto; 
+  text-align: center;
+  padding-top: 40px;
+}
+
+article#journey_select_box div#select_box h2 {
+  padding-bottom: 40px;
+}
+
+article#journey_select_box div#select_box div#select_div {
+  width: 55%;
+  margin: 0 auto;
+
+}
+
+article#journey_select_box div#select_box div#select_div select {
+  width: 100px;
+}
