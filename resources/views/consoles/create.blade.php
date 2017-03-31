@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<title>Create Company</title>
+<title>Create Console</title>
 <link rel="stylesheet" href="../css/create.css" type="text/css">
 @section('content')
 @if (Auth::check())

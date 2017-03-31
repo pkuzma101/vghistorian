@@ -50,7 +50,13 @@ section#console_page article#tabs_box div#console_tabs ul li {
   width: 33%;
   text-align: center;
   height: 50px;
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 60px;
+}
+
+
+section#console_page article#tabs_box div#console_tabs ul li a {
+  color: white;
 }
 
 section#console_page article#tabs_box div#tab_text {
@@ -59,8 +65,17 @@ section#console_page article#tabs_box div#tab_text {
 
 section#console_page article#tabs_box div#tab_text p {
   font-size: 1.5em;
-  width: 80%;
+  width: 90%;
   margin:0 auto;
+}
+
+div#tab_text div#history_box {
+  width: 75%;
+  margin: 0 auto;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 25px ridge lightgray;
 }
 
 section#console_page article#summary_box {

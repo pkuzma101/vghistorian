@@ -1,0 +1,58 @@
+section#game_page h1#game_name {
+  text-align: center;
+  color: white;
+}
+
+section#game_page div#media_box {
+  width: 65%;
+  height: 385px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+section#game_page span {
+  float: left;
+  margin-left: 100px;
+
+}
+
+section#game_page span img {
+  height: 300px;
+  width: 350px;
+}
+
+section#game_page article#synopsis_box {
+  width: 100%;
+  background: white;
+  float: left;
+  padding: 40px;
+}
+
+section#game_page article#synopsis_box div#history_box {
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 30px;
+  border: 25px ridge lightgray;
+}
+
+section#game_page article#synopsis_box div#history_box p {
+  font-size: 2em;
+}
+
+section#game_page article#screenshot_box {
+  width: 100%;
+  height: 350px;
+  padding: 40px;
+  float: left;
+}
+
+section#game_page article#screenshot_box div#screenshot_div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#game_page article#screenshot_box div#screenshot_div img {
+  height: 400px;
+  width: 450px;
+}

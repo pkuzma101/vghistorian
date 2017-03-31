@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<title>Show {{ $console->id }}</title>
+<title>{{ $console->name }}</title>
 {{ Html::style( asset('css/console.css')) }}
 @section('content')
 <section id="console_page">
@@ -20,12 +20,12 @@
       <div id="tab_text">
         <div id="console_tabs_1">
           <div id="history_box">
-            <p id="history_text">{{{ $console->history }}}</p>
+            <p id="history_text"><?php echo nl2br($console->history); ?></p>
           </div>
         </div>
         <div id="console_tabs_2">
-          <div id="analysis_box">
-            <p id="analysis_text">{{{ $console->analysis }}}</p>
+          <div id="history_box">
+            <p id="history_text"><?php echo nl2br($console->analysis); ?> </p>
           </div>
         </div>
         <div id="console_tabs_3">
@@ -51,7 +51,7 @@
     <div id="featured_pic"></div>
     <table id="photo_table">
       <tr>
-        <td><img src="{{ $console->controller_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="North American version"></td>
+        <td><img src="{{ $console->controller_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="Controller"></td>
         <td><img src="{{ $console->jap_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="Japanese version"></td>
         <td><img src="{{ $console->pal_pic }}" class="gallery_pic" data-toggle="tooltip" data-placement="left" title="PAL version"></td>
       </tr>

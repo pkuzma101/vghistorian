@@ -21,19 +21,18 @@
     <div id="select_box">
       <h2>Start your journey by system or company?</h2>
       <div id="select_div">
- 
           <select id="console_select" name="console_select" style="float: left;">
+            <option value="nil">Select...</option>
             @foreach($consoles as $consoles)
               <option value="{{{ $consoles->id }}}">{{{ $consoles->name }}}</option>
             @endforeach
           </select>
-        
           <select id="company_select" name="company_select" style="float: right;">
+            <option value="nil">Select...</option>
             @foreach($companies as $company)
               <option value="{{{ $company->id }}}">{{{ $company->name }}}</option>
             @endforeach
           </select>
-        
       </div>
     </div>
   </article>
@@ -46,12 +45,21 @@
     }
 
     // create system blocks on grid
-    $('div#timeline').append('<div id="atari_2600" class="system_block">Atari 2600</div>');
+    $('div#timeline').append('<div id="atari_2600" class="system_block">{{ HTML::link("consoles/8", "Atari 2600") }}</div>');
     $('div#timeline').append('<div id="nes" class="system_block">NES</div>');
     $('div#timeline').append('<div id="genesis" class="system_block">Genesis</div>');
     $('div#timeline').append('<div id="snes" class="system_block">Super NES</div>');
     $('div#timeline').append('<div id="ps1" class="system_block">Playstation</div>');
     $('div#timeline').append('<div id="n64" class="system_block">Nintendo 64</div>');
+
+    // give select menus at bottom headers functionality
+    $('#console_select').change(function() {
+      var self = $(this);
+      var console_id = self.children(":selected").val();
+      if (console_id != "nil") { 
+        window.location.href = "/vgh/public/consoles/" + console_id;
+      }
+    });
     
   });
 </script>
