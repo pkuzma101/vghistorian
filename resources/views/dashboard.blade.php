@@ -45,9 +45,9 @@
     }
 
     // create system blocks on grid
-    $('div#timeline').append('<div id="atari_2600" class="system_block">{{ HTML::link("consoles/8", "Atari 2600") }}</div>');
-    $('div#timeline').append('<div id="nes" class="system_block">NES</div>');
-    $('div#timeline').append('<div id="genesis" class="system_block">Genesis</div>');
+    $('div#timeline').append('<div id="atari_2600" class="system_block">{{ HTML::link("consoles/8", "2600") }}</div>');
+    $('div#timeline').append('<div id="nes" class="system_block">{{ HTML::link("consoles/9", "NES") }}</div>');
+    $('div#timeline').append('<div id="genesis" class="system_block">{{ HTML::link("consoles/10", "Genesis") }}</div>');
     $('div#timeline').append('<div id="snes" class="system_block">Super NES</div>');
     $('div#timeline').append('<div id="ps1" class="system_block">Playstation</div>');
     $('div#timeline').append('<div id="n64" class="system_block">Nintendo 64</div>');

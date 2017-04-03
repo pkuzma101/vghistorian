@@ -9,16 +9,15 @@ use DB;
 use Input;
 
 class ConsoleController extends Controller {
+  public function save_image($input, $column, $object) {
+    $file = Input::file($input);
+    $destination_path = 'img/';
+    $file_name = $file->getClientOriginalName();
+    $file = $file->move($destination_path, $file_name);
+    $object->$column = $destination_path . $file_name;
 
-    public function save_image($input, $column, $object) {
-      $file = Input::file($input);
-      $destination_path = '/vgh/img/';
-      $file_name = $file->getClientOriginalName();
-      $file = $file->move($destination_path, $file_name);
-      $object->$column = $destination_path . $file_name;
-
-      $object->save();
-    }
+    $object->save();
+  }
   /**
    * Display a listing of the resource.
    *

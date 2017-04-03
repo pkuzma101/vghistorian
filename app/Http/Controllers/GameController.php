@@ -12,7 +12,7 @@ use Input;
 class GameController extends Controller {
   public function save_image($input, $column, $object) {
     $file = Input::file($input);
-    $destination_path = '/vgh/img/';
+    $destination_path = 'img/';
     $file_name = $file->getClientOriginalName();
     $file = $file->move($destination_path, $file_name);
     $object->$column = $destination_path . $file_name;
