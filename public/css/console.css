@@ -1,130 +1,63 @@
-section#console_page h1#console_name {
-  text-align: center;
+section#console_page {
+  height: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
-section#console_page div#console_pic_box {
+section#console_page article#title_art {
   width: 30%;
-  height: 400px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 section#console_page div#logo_box {
-  width: 30%;
-  height: 200px;
-  margin: 0 auto;
-  padding-top: 40px;
-}
-
-section#console_page div#logo_box img {
-  margin: 0 auto;
-  width: 100%;
-  height: 150px;
-}
-
-section#console_page div#console_pic_box img {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-
-section#console_page article {
-  width: 100%;
-  margin: 0 auto;
   margin-top: 40px;
 }
 
-section#console_page article#tabs_box {
-  background: #194ec4;
+section#console_page div#logo_box img {
+  height: 180px;
+  width: 550px;
 }
 
-section#console_page article#tabs_box div#console_tabs ul {
+section#console_page ul#subject_list {
   list-style-type: none;
   padding: 0px;
   margin: 0 auto;
   width: 70%;
+  margin-top:45px;
 }
 
-section#console_page article#tabs_box div#console_tabs ul li {
+ul#subject_list li {
   float: left;
   width: 33%;
   text-align: center;
   height: 50px;
-  font-size: 3em;
-  line-height: 60px;
+  font-size: 2em;
+  line-height: 40px;
 }
 
-
-section#console_page article#tabs_box div#console_tabs ul li a {
+ul#subject_list li a {
+  padding: 20px;
   color: white;
+  border: 10px ridge white;
+  border-radius: 10px;
+  background-color: #000076;
 }
 
-section#console_page article#tabs_box div#tab_text {
-  padding-top: 90px;
+article#text_box {
+  /*padding-top: 100px;*/
+  height: 700px;
+  clear: both;
+  position: relative;
 }
 
-section#console_page article#tabs_box div#tab_text p {
-  font-size: 1.5em;
-  width: 90%;
-  margin:0 auto;
-}
-
-div#tab_text div#history_box {
-  width: 75%;
-  margin: 0 auto;
-  background: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border: 25px ridge lightgray;
-}
-
-section#console_page article#summary_box {
-  background: white;
-  padding-bottom: 50px;
-  padding-top: 20px;
-}
-
-section#console_page article#summary_box h2 {
-  text-align: center;
-}
-
-table#summary_table {
-  width: 60%;
-  font-size: 1.7em;
-  margin: 0 auto;
-}
-
-table#summary_table td {
-  height: 60px;
-  border: 1px solid black;
-  padding-left: 15px;
-}
-
-section#console_page article#gallery {
-  width: 100%;
-  margin-top: 55px;
-  background: #194ec4;
-  padding-bottom: 75px;
-}
-
-section#console_page article#gallery table#photo_table {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-section#console_page article#gallery div#featured_pic {
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  display: none;
-}
-
-table#photo_table td {
-  width: 35%;
-}
-
-table#photo_table img {
+article#screenshot_box {
   height: 300px;
-  width: 350px;
+  width: 50%;
+  margin: 0 auto;
+  /*background: red;*/
+}
+
+article#screenshot_box img.carousel_pic {
+  width: 100%;
+  height: 500px;
 }
